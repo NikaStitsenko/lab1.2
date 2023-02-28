@@ -2,10 +2,13 @@
 которая соединяет эти слова в одну длинную строку, разделяя слова пробелами.
 Используйте операторы цикла.'''
 
-i = []
+i = False
 s = []
-while i != '':
-    i = input()
-    s.append(''.join(i))
-    #что-то не совсем то но вроде что-то
-print(s)
+while i == False:
+    inp = input()
+    if inp == 'stop':
+        i = True
+    else:
+        s.append(inp)
+
+print(" ".join(s))
